@@ -275,9 +275,10 @@ ul {
 
 @media (max-width : 767px){
     .landing .text .content {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        margin-right: 115px;
+        position: relative;
     }
 }
 
@@ -288,18 +289,35 @@ ul {
     line-height: 1.5;
     margin-bottom: 20px;
     padding-left: 100px;
+    margin-right: 50px;
+    text-align: center;
 }
 
 .landing .text .content p {
     font-size: 14px;
     line-height: 1.6;
     padding-left: 100px;
+    text-align: center;
+}
+
+@media (max-width : 767px) {
+    .landing .text .content h2 {
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.2;
+        text-align: center;
+        margin-right: 74px;
+    }
+    
 }
 
 @media (max-width : 767px) {
     .landing .text .content p {
         line-height: 1.2;
+        font-weight: normal;
         text-align: center;
+        font-size: 7px;
+        margin-right: 75px;
     }
 }
 
@@ -344,12 +362,12 @@ ul {
     left: 30px;
 }
 
-@media (max-width : 767px) {
+/* @media (max-width : 767px) {
     .landing .right-arrows ,
     .landing  .left-arrows {
         display: none;
     }
-}
+} */
 
 /*End Landing*/
 
@@ -393,7 +411,8 @@ ul {
 
 @media (max-width : 767px) {
     .services .box i {
-        margin-right: 20px;
+        margin-right: 25px;
+        text-align: center;
     }
     
 }
