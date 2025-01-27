@@ -307,6 +307,7 @@ ul {
         line-height: 1.2;
         text-align: center;
         margin-right: 74px;
+        padding-left: 65px;
     }
     
 }
@@ -318,6 +319,7 @@ ul {
         text-align: center;
         font-size: 7px;
         margin-right: 75px;
+        padding-left: 65px;
     }
 }
 
@@ -361,13 +363,6 @@ ul {
     font-size: 30px;
     left: 30px;
 }
-
-/* @media (max-width : 767px) {
-    .landing .right-arrows ,
-    .landing  .left-arrows {
-        display: none;
-    }
-} */
 
 /*End Landing*/
 
@@ -820,6 +815,8 @@ ul {
     }
 }
 
+
+
 .our-skills .testimonials .text {
     line-height: 1.8;
     border-bottom: 1px solid #ccc;
@@ -832,20 +829,21 @@ ul {
     margin-bottom: 10px;
 }
 
+
 .our-skills .testimonials .bullets {
-    width: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 230px;
-    margin-top: 35px;
 }
 
 .our-skills .testimonials .bullets li {
     width: 20px;
     height: 20px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 50%;
+    margin-right: 10px;
     list-style: none;
 }
 
